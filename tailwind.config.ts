@@ -61,6 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				neon: {
+					pink: '#FF0080',
+					cyan: '#00FFFF',
+					gold: '#FFD700',
+					purple: '#8B5CF6'
+				},
+				casino: {
+					dark: '#1A1A2E',
+					darker: '#0D0D21',
+					accent: '#FF6B35'
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neon-pulse': {
+					'0%, 100%': {
+						textShadow: '0 0 5px #FF0080, 0 0 10px #FF0080, 0 0 15px #FF0080, 0 0 20px #FF0080'
+					},
+					'50%': {
+						textShadow: '0 0 2px #FF0080, 0 0 5px #FF0080, 0 0 8px #FF0080, 0 0 12px #FF0080'
+					}
+				},
+				'glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px #00CYFF, 0 0 10px #00CYFF, 0 0 15px #00CYFF'
+					},
+					'50%': {
+						boxShadow: '0 0 10px #00CYFF, 0 0 20px #00CYFF, 0 0 30px #00CYFF'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neon-pulse': 'neon-pulse 2s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite alternate'
 			}
 		}
 	},
